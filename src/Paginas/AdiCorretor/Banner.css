@@ -1,0 +1,10 @@
+/* //components/Banner.css */
+
+.banner {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+}

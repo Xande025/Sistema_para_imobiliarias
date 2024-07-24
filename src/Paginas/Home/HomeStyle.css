@@ -1,0 +1,249 @@
+/* HomeStyle.css */
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do cabeçalho */
+.fixed-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header);
+  padding: 10px;
+  margin: -20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 20px;
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+/* Botões e submenus */
+.Butoes {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--fundo);
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.Butoes:hover {
+  background-color: #f1d742;
+}
+
+.submenu-parent:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--fundo);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.submenu li a:hover {
+  background-color: #f1d742;
+  border-radius: 10px;
+}
+
+/* Estilos para a section Controle */
+.Controle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(80vh - 10px);
+}
+
+.controle-container {
+  text-align: center;
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--fundo);
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button-container button a {
+  text-decoration: none;
+  color: black;
+}
+
+.button-container button:hover {
+  background-color: #f1d742;
+}
+
+.select-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.select-container select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .fixed-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .controle-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-container button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .select-container select {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fixed-header {
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 0 auto;
+    width: 80px;
+  }
+
+  .Butoes {
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .controle-container {
+    width: 95%;
+  }
+
+  .button-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .select-container select {
+    width: 95%;
+  }
+}

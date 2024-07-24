@@ -1,0 +1,102 @@
+.containerr {
+  background-color: #f7fafc;
+  font-family: sans-serif;
+  margin: 20px;
+ 
+}
+
+.tituloM {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.fixed-headerr {
+  display: flex;
+  justify-content: space-between; /* Espaçamento entre os itens */
+  align-items: center;
+  background-color: var(--header);
+  padding: 10px; /* Adiciona um pouco de preenchimento para estética */
+  margin: -20px;
+  margin-bottom: 10px;
+  
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 80px;
+  width: 100px;
+}
+
+.Bnt {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--fundo);
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  list-style: none;
+}
+
+.Bnt:hover {
+  background-color: #f1d742;
+}
+
+
+
+.mes1, .mes2, .trimestre1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a5568;
+}
+
+.table {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #d2d6dc;
+  margin: 0 auto;
+  border-collapse: collapse; /* Para juntar as bordas da tabela */
+}
+
+.table-header, .table-footer {
+  background-color: #edf2f7;
+  border-bottom: 1px solid #cbd5e0;
+  padding: 0.5rem 1rem;
+}
+
+.table-total {
+  background-color: #edf2f7;
+  border-bottom: solid #000000;
+  padding: 0.5rem 1rem;
+}
+
+.table-cell, .table-cellV, .table-cellN {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #cbd5e0;
+  text-align: center; /* Centraliza o texto nas células */
+}
+
+.table-cellN {
+  padding: 0.5rem 1rem;
+  border-bottom: solid #000000;
+  text-align: center; /* Centraliza o texto nas células */
+  font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .texto {
+    font-size: 1rem;
+  }
+}

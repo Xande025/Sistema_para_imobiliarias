@@ -23,12 +23,12 @@ function Login() {
     { email: 'MarcioM', password: 'vivamudanca', role: 'home' },
     { email: 'NetoS', password: 'vivamudanca', role: 'home' },
     { email: 'RafaelA', password: 'vivamudanca', role: 'home' },
-    { email: 'TheodoroUP', password: 'vivamudanca', role: 'home' }, //corretores Centro
+    { email: 'TheodoroC', password: 'vivamudanca', role: 'home' }, //corretores Centro
     { email: 'AnaBia', password: 'vivamudanca', role: 'una' },
-    { email: 'DanmersomUP', password: 'vivamudanca', role: 'una' },
-    { email: 'JacquesUP', password: 'vivamudanca', role: 'una' },
-    { email: 'JordanaUP', password: 'vivamudanca', role: 'una' },
-    { email: 'PaivaUP', password: 'vivamudanca', role: 'una' },
+    { email: 'DanmersomS', password: 'vivamudanca', role: 'una' },
+    { email: 'JacquesD', password: 'vivamudanca', role: 'una' },
+    { email: 'JordanaC', password: 'vivamudanca', role: 'una' },
+    { email: 'RafaelP', password: 'vivamudanca', role: 'una' },
     { email: 'RossanaP', password: 'vivamudanca', role: 'una' } // Corretores Una
   ];
 

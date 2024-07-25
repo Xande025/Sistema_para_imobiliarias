@@ -8,13 +8,13 @@ body {
   padding: 0;
 }
 
-.container {
+.home-container {
   margin: 0;
   padding: 0;
 }
 
 /* Estilos do cabeçalho */
-.fixed-header {
+.home-fixed-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,14 +23,14 @@ body {
   margin: -20px;
 }
 
-.header-container {
+.home-header-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.logo {
+.home-logo {
   margin-left: 20px;
   width: 100px;
 }
@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 /* Botões e submenus */
-.Butoes {
+.home-button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: var(--fundo);
@@ -66,15 +66,15 @@ nav ul li a {
   transition: background-color 0.3s;
 }
 
-.Butoes:hover {
+.home-button:hover {
   background-color: #f1d742;
 }
 
-.submenu-parent:hover .submenu {
+.home-submenu-parent:hover .home-submenu {
   display: block;
 }
 
-.submenu {
+.home-submenu {
   display: none;
   position: absolute;
   top: 100%;
@@ -87,31 +87,31 @@ nav ul li a {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.submenu li {
+.home-submenu li {
   margin: 0;
 }
 
-.submenu li a {
+.home-submenu li a {
   display: block;
   padding: 10px;
   text-decoration: none;
   color: black;
 }
 
-.submenu li a:hover {
+.home-submenu li a:hover {
   background-color: #f1d742;
   border-radius: 10px;
 }
 
 /* Estilos para a section Controle */
-.Controle {
+.home-controle {
   display: flex;
   justify-content: center;
   align-items: center;
   height: calc(80vh - 10px);
 }
 
-.controle-container {
+.home-controle-container {
   text-align: center;
   width: 100%;
   max-width: 1100px;
@@ -127,14 +127,14 @@ h1 {
   margin-top: 20px;
 }
 
-.button-container {
+.home-button-container {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.button-container button {
+.home-button-container button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: var(--fundo);
@@ -146,22 +146,22 @@ h1 {
   transition: background-color 0.3s;
 }
 
-.button-container button a {
+.home-button-container button a {
   text-decoration: none;
   color: black;
 }
 
-.button-container button:hover {
+.home-button-container button:hover {
   background-color: #f1d742;
 }
 
-.select-container {
+.home-select-container {
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
-.select-container select {
+.home-select-container select {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -176,13 +176,13 @@ h1 {
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .fixed-header {
+  .home-fixed-header {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
   }
 
-  .logo {
+  .home-logo {
     margin: 0 auto;
   }
 
@@ -197,53 +197,53 @@ h1 {
     width: 100%;
   }
 
-  .controle-container {
+  .home-controle-container {
     width: 90%;
     margin: 10px auto;
   }
 
-  .button-container {
+  .home-button-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .button-container button {
+  .home-button-container button {
     width: 100%;
     max-width: 300px;
   }
 
-  .select-container select {
+  .home-select-container select {
     width: 90%;
   }
 }
 
 @media (max-width: 480px) {
-  .fixed-header {
+  .home-fixed-header {
     padding: 10px;
   }
 
-  .logo {
+  .home-logo {
     margin: 0 auto;
     width: 80px;
   }
 
-  .Butoes {
+  .home-button {
     border-radius: 5px;
     padding: 5px;
     width: 100%;
     max-width: 200px;
   }
 
-  .controle-container {
+  .home-controle-container {
     width: 95%;
   }
 
-  .button-container button {
+  .home-button-container button {
     padding: 8px 16px;
     font-size: 14px;
   }
 
-  .select-container select {
+  .home-select-container select {
     width: 95%;
   }
 }

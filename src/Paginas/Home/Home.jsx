@@ -12,41 +12,24 @@ const Home = () => {
   };
 
   return (
-    <div className="container">
-      <header className="fixed-header">
-        <img src="/logo.png" alt="Logo" className="logo" />
-        <div className="header-container">
+    <div className="home-container">
+      <header className="home-fixed-header">
+        <img src="/logo.png" alt="Logo" className="home-logo" />
+        <div className="home-header-container">
           <nav>
             <ul>
               <li>
-                <button className='Butoes'>
+                <button className="home-button">
                   <Link to={`/perfil/${user.email}`}>Perfil corretores</Link>
                 </button>
               </li>
-              <li className="submenu-parent">
-                <button className='Butoes'>
-                  <Link to="#">Cadastrar</Link>
-                </button>
-                <ul className="submenu">
-                  <li>
-                    <button className='Butoes'>
-                      <Link to="/Index">Corretores</Link>
-                    </button>
-                  </li>
-                  <li>
-                    <button className='Butoes'>
-                      <Link to="/Agenciamento">Agenciamentos</Link>
-                    </button>
-                  </li>
-                </ul>
-              </li>
               <li>
-                <button className='Butoes'>
+                <button className="home-button">
                   <Link to="/Unahome">Equipe Una</Link>
                 </button>
               </li>
               <li>
-                <button className='Butoes' onClick={handleLogout}>
+                <button className="home-button" onClick={handleLogout}>
                   <Link to="/login">Sair</Link>
                 </button>
               </li>
@@ -55,24 +38,24 @@ const Home = () => {
         </div>
       </header>
       <main>
-        <section className='Controle'>
-          <div className="controle-container">
+        <section className="home-controle">
+          <div className="home-controle-container">
             <h1>Controle de Agenciamentos - Equipe Centro</h1>
-            <div className="button-container">
-              <button className='Butoes'>
+            <div className="home-button-container">
+              <button className="home-button">
                 <Link to="/Mensal">Controle Mensal</Link>
               </button>
-              <button className='Butoes'>
+              <button className="home-button">
                 <Link to="/Trimestral">Controle Trimestral</Link>
               </button>
-              <button className='Butoes'>
+              <button className="home-button">
                 <Link to="/semestral">Controle Semestral</Link>
               </button>
-              <button className='Butoes'>
+              <button className="home-button">
                 <Link to="/controle-anual">Controle Anual</Link>
               </button>
             </div>
-            <div className="select-container">
+            <div className="home-select-container">
               <select id="selecionarCorretor" onChange={(event) => navigate(`/perfil/${event.target.value}`)}>
                 <option value="">Selecione um Corretor</option>
                 {/* Adicione opções de corretores aqui */}

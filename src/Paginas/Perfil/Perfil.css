@@ -182,3 +182,191 @@
     align-items: center;
   }
 }
+
+:root {
+  --primary-bg: #888888;
+  --secondary-bg: #071E26;
+  --accent-gray: #484848;
+  --header-gray: #888888;
+  --highlight-color: #f3c336;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #888888;
+  padding: 2rem;
+}
+
+.profile-card {
+  background: #f3c336;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-gray);
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.profile-info h1,
+.profile-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.profile-about {
+  background-color: var(--accent-gray);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.agency-section {
+  background: var(--secondary-bg);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.months-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.month-item {
+  background-color: var(--primary-bg);
+  border-radius: 10px;
+  width: 100px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.month-item img {
+  width: 40px;
+  margin-top: 0.5rem;
+}
+
+.back-button {
+  background-color: var(--highlight-color);
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: black;
+  color: var(--highlight-color);
+}
+
+/* Responsividade */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+  .profile-card,
+  .agency-section {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .months-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .month-item {
+    width: 80%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #888888;
+  padding: 2rem;
+}
+
+.profile-card {
+  background: #f3c336;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-gray);
+  margin-bottom: 1rem;
+}
+
+.profile-info,
+.profile-about {
+  background-color: var(--accent-gray);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-info h1,
+.profile-about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.profile-info h3,
+.profile-about p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.profile-info h3 {
+  font-weight: 500;
+}
+
+.profile-about {
+  background-color: var(--accent-gray);
+}
+
+.profile-about p {
+  margin: 0;
+}

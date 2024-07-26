@@ -19,6 +19,7 @@ function Login() {
     { email: 'AlexC', password: 'vivamudanca', role: 'home' }, //Administrativo
     { email: 'CarolC', password: 'vivamudanca', role: 'home' },
     { email: 'ClaudioUP', password: 'vivamudanca', role: 'home' },
+    { email: 'GabrielM', password: 'vivamudanca', role: 'home' },  
     { email: 'Illie', password: 'vivamudanca', role: 'home' },
     { email: 'MarcioM', password: 'vivamudanca', role: 'home' },
     { email: 'NetoS', password: 'vivamudanca', role: 'home' },

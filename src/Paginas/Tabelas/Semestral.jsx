@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Trimestral.css';
-import Filtro2 from './Filtro2'; // Importe o componente Filtro2
+import Filtro3 from './Filtro3'; // Importe o componente Filtro2
 
 const Semestral = () => {
   const [selectedQuarter, setSelectedQuarter] = useState('1º Trimestre'); // Estado para controlar o trimestre selecionado
@@ -19,12 +19,12 @@ const Semestral = () => {
       </header>
 
       {/* Adicione o componente de filtro de trimestres */}
-      <Filtro2 selectedQuarter={selectedQuarter} setSelectedQuarter={setSelectedQuarter} />
+      <Filtro3 selectedQuarter={selectedQuarter} setSelectedQuarter={setSelectedQuarter} />
 
       {/* Renderize os dados com base no trimestre selecionado */}
-      {selectedQuarter === '1º Trimestre' && (
+      {selectedQuarter === '1º Semestre' && (
         <div className="Trimestre">
-          <h1 className="titulo-trimestre">1º Trimestre (Jan - Mar)</h1>
+          <h1 className="titulo-trimestre">1º Semestre (Jan - Jun)</h1>
           <table className="table">
             <thead>
               <tr className="table-header">
@@ -39,58 +39,58 @@ const Semestral = () => {
             <tbody>
             <tr className="table-row">
                 <td className="table-cell">Carol</td>
-                <td className="table-cellV">38</td>
-                <td className="table-cellV">25</td>
-                <td className="table-cellV">10</td>
-                <td className="table-cellV">15</td>
+                <td className="table-cellV">70</td>
+                <td className="table-cell">47</td>
+                <td className="table-cell">13</td>
+                <td className="table-cell">29</td>
 
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Claudio</td>
-                <td className="table-cellV">30</td>
-                <td className="table-cellV">22</td>
+                <td className="table-cellV">57</td>
+                <td className="table-cellV">40</td>
                 <td className="table-cellV">5</td>
-                <td className="table-cellV">19</td>
+                <td className="table-cellV">35</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Illie</td>
-                <td className="table-cell">19</td>
+                <td className="table-cell">28</td>
                 <td className="table-cell">11</td>
-                <td className="table-cell">2</td>
-                <td className="table-cell">12</td>
+                <td className="table-cell">4</td>
+                <td className="table-cell">13</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Marcio</td>
-                <td className="table-cell">19</td>
-                <td className="table-cell">8</td>
+                <td className="table-cell">26</td>
+                <td className="table-cell">14</td>
                 <td className="table-cell">0</td>
-                <td className="table-cell">0</td>
+                <td className="table-cell">13</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Martini</td>
-                <td className="table-cellV">27</td>
-                <td className="table-cell">15</td>
-                <td className="table-cell">7</td>
+                <td className="table-cell">45</td>
+                <td className="table-cell">29</td>
                 <td className="table-cell">8</td>
+                <td className="table-cell">13</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Neto</td>
+                <td className="table-cellV">63</td>
+                <td className="table-cellV">49</td>
+                <td className="table-cellV">4</td>
                 <td className="table-cellV">32</td>
-                <td className="table-cellV">27</td>
-                <td className="table-cellV">3</td>
-                <td className="table-cellV">17</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Rafael</td>
-                <td className="table-cell">3</td>
-                <td className="table-cell">3</td>
+                <td className="table-cell">29</td>
+                <td className="table-cell">13</td>
                 <td className="table-cell">0</td>
-                <td className="table-cellV">0</td>
+                <td className="table-cell">1</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Theodoro</td>
-                <td className="table-cell">16</td>
-                <td className="table-cell">11</td>
+                <td className="table-cell">26</td>
+                <td className="table-cell">14</td>
                 <td className="table-cell">1</td>
                 <td className="table-cell">4</td>
               </tr>

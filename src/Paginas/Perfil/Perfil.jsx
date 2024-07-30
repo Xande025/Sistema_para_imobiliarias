@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import usersData from './usersData';
+import { Link } from 'react-router-dom';
 import './Perfil.css';
 
 const Perfil = () => {
@@ -83,8 +84,8 @@ const Perfil = () => {
               <img src={user.profile.agenciamentos.dezembro} alt="Dezembro" />
             </div>
           </div>
-          <button className="back-button" onClick={() => navigate('/home')}>
-            Voltar para Home
+          <button className='back-button'>
+            <Link to="/home">Voltar para Home</Link>
           </button>
         </div>
       </main>

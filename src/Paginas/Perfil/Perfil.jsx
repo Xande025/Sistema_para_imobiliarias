@@ -83,8 +83,8 @@ const Perfil = () => {
               <img src={user.profile.agenciamentos.dezembro} alt="Dezembro" />
             </div>
           </div>
-          <button className="back-button">
-            <a href="/home">Voltar para Home</a>
+          <button className="back-button" onClick={() => navigate('/home')}>
+            Voltar para Home
           </button>
         </div>
       </main>

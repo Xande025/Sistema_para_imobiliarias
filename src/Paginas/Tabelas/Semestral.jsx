@@ -4,7 +4,7 @@ import './Trimestral.css';
 import Filtro3 from './Filtro3'; // Importe o componente Filtro2
 
 const Semestral = () => {
-  const [selectedQuarter, setSelectedQuarter] = useState('1º Trimestre'); // Estado para controlar o trimestre selecionado
+  const [selectedQuarter, setSelectedQuarter] = useState('1º Semestre'); // Estado para controlar o trimestre selecionado
 
   return (
     <div className="containerr">
@@ -96,10 +96,10 @@ const Semestral = () => {
               </tr>
               <tr className="table-row">
                 <td className="table-cellN">Total</td>
-                <td className="table-cellN">184</td>
-                <td className="table-cellN">122</td>
-                <td className="table-cellN">28</td>
-                <td className="table-cellN">75</td>
+                <td className="table-cellN">344</td>
+                <td className="table-cellN">217</td>
+                <td className="table-cellN">35</td>
+                <td className="table-cellN">129</td>
 
               </tr>
             </tbody>

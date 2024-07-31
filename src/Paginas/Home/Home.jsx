@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomeStyle.css';
+import usersData from '../Perfil/usersData'; // Ajuste o caminho conforme necessário
 
 const Home = () => {
   const navigate = useNavigate();
@@ -56,9 +57,16 @@ const Home = () => {
               </button>
             </div>
             <div className="home-select-container">
-              <select id="selecionarCorretor" onChange={(event) => navigate(`/perfil/${event.target.value}`)}>
+              <select
+                id="selecionarCorretor"
+                onChange={(event) => navigate(`/perfil/${event.target.value}`)}
+              >
                 <option value="">Selecione um Corretor</option>
-                {/* Adicione opções de corretores aqui */}
+                {usersData.map(user => (
+                  <option key={user.email} value={user.email}>
+                    {user.profile.name}
+                  </option>
+                ))}
               </select>
             </div>
           </div>

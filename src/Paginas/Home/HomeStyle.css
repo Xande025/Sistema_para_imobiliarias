@@ -247,3 +247,34 @@ h1 {
     width: 95%;
   }
 }
+/* HomeStyle.css */
+
+.papelaria-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.papelaria-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.papelaria-menu li {
+  padding: 8px 12px;
+}
+
+.papelaria-menu a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.papelaria-menu a:hover {
+  text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 // Home.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomeStyle.css';
 import usersData from '../Perfil/usersData';
@@ -7,10 +7,15 @@ import usersData from '../Perfil/usersData';
 const Home = () => {
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem('loggedInUser'));
+  const [showPapelaria, setShowPapelaria] = useState(false);
 
   const handleLogout = () => {
     localStorage.removeItem('loggedInUser');
     navigate('/login');
+  };
+
+  const handlePapelariaClick = () => {
+    setShowPapelaria(!showPapelaria);
   };
 
   return (
@@ -36,6 +41,37 @@ const Home = () => {
                 <button className="home-button" onClick={handleLogout}>
                   <Link to="/login">Sair</Link>
                 </button>
+              </li>
+              <li>
+                <button className="home-button" onClick={handlePapelariaClick}>
+                  Papelaria
+                </button>
+                {showPapelaria && (
+                  <div className="papelaria-menu">
+                    <ul>
+                      <li>
+                        <a href="public\papelaria\FICHA DE VISITA.docx" download>
+                          Ficha de Visita
+                        </a>
+                      </li>
+                      <li>
+                        <a href="public\papelaria\Proposta  de Compra PDF .pdf" download>
+                          Proposta de Compra
+                        </a>
+                      </li>
+                      <li>
+                        <a href="public\papelaria\ficha_imovel (8).pdf" download>
+                          Ficha de Imóvel
+                        </a>
+                      </li>
+                      <li>
+                        <a href="public\papelaria\ficha_terreno (3).pdf" download>
+                          Ficha de Terreno
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
               </li>
             </ul>
           </nav>

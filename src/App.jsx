@@ -8,6 +8,8 @@ import Agenciamento from './Paginas/AdiAgenciamento/Agenciamento';
 import Trimestral from './Paginas/Tabelas/Trimestral';
 import Semestral from './Paginas/Tabelas/Semestral';
 import Unahome from './Paginas/Home/Unahome';
+import Plantoes from './Paginas/Plantao/Plantoes';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Route path="/trimestral" element={<Trimestral />} />
         <Route path="/semestral" element={<Semestral />} />
         <Route path="/" element={<Navigate to="/login" />} /> {/* Redireciona para login */}
+        <Route path="/plantoes" element={<Plantoes />} />
       </Routes>
     </Router>
   );

@@ -1,4 +1,3 @@
-// Home.jsx
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomeStyle.css';
@@ -35,6 +34,11 @@ const Home = () => {
               <li>
                 <button className="home-button">
                   <Link to="/Unahome">Equipe Una</Link>
+                </button>
+              </li>
+              <li>
+                <button className="home-button">
+                  <Link to="/Plantoes">Plantão</Link>
                 </button>
               </li>
               <li>

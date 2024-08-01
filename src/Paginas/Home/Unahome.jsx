@@ -1,10 +1,12 @@
+// Home.jsx
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomeStyle.css';
+import usersData from '../Perfil/usersData';
 
-const Unahome = () => {
+const Home = () => {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem('loggedInUser')); // Obtém o usuário logado do localStorage
+  const user = JSON.parse(localStorage.getItem('loggedInUser'));
 
   const handleLogout = () => {
     localStorage.removeItem('loggedInUser');
@@ -18,11 +20,13 @@ const Unahome = () => {
         <div className="home-header-container">
           <nav>
             <ul>
-              <li>
-                <button className="home-button">
-                  <Link to={`/perfil/${user.email}`}>Perfil corretores</Link>
-                </button>
-              </li>
+              {user.role !== 'adm' && (
+                <li>
+                  <button className="home-button">
+                    <Link to={`/perfil/${user.email}`}>Perfil corretores</Link>
+                  </button>
+                </li>
+              )}
               <li>
                 <button className="home-button">
                   <Link to="/home">Equipe Centro</Link>
@@ -38,29 +42,38 @@ const Unahome = () => {
         </div>
       </header>
       <main>
-        <section className="home-controle">
-          <div className="home-controle-container">
-            <h1>Controle de Agenciamentos - Equipe Una</h1>
-            <div className="home-button-container">
-              <button className="home-button">
-                <Link to="/Mensal">Controle Mensal</Link>
-              </button>
-              <button className="home-button">
-                <Link to="/Trimestral">Controle Trimestral</Link>
-              </button>
-              <button className="home-button">
-                <Link to="/semestral">Controle Semestral</Link>
-              </button>
-              <button className="home-button">
-                <Link to="/controle-anual">Controle Anual</Link>
-              </button>
-            </div>
-            <div className="home-select-container">
-              <select id="selecionarCorretor" onChange={(event) => navigate(`/perfil/${event.target.value}`)}>
-                <option value="">Selecione um Corretor</option>
-                {/* Adicione opções de corretores aqui */}
-              </select>
-            </div>
+      <section className="home-controle">
+            <div className="home-controle-container">
+              <h1>Controle de Agenciamentos - Equipe Una</h1>
+              <div className="home-button-container">
+                <button className="home-button">
+                  <Link to="/Mensal">Controle Mensal</Link>
+                </button>
+                <button className="home-button">
+                  <Link to="/Trimestral">Controle Trimestral</Link>
+                </button>
+                <button className="home-button">
+                  <Link to="/semestral">Controle Semestral</Link>
+                </button>
+                <button className="home-button">
+                  <Link to="/controle-anual">Controle Anual</Link>
+                </button>
+              </div>
+            {user.role === 'adm' && (
+              <div className="home-select-container">
+                <select
+                  id="selecionarCorretor"
+                  onChange={(event) => navigate(`/perfil/${event.target.value}`)}
+                >
+                  <option value="">Selecione um Corretor</option>
+                  {usersData.map(user => (
+                    <option key={user.email} value={user.email}>
+                      {user.profile.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
           </div>
         </section>
       </main>
@@ -68,4 +81,4 @@ const Unahome = () => {
   );
 }
 
-export default Unahome;
+export default Home;

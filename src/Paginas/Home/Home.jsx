@@ -59,19 +59,21 @@ const Home = () => {
                 <Link to="/controle-anual">Controle Anual</Link>
               </button>
             </div>
-            <div className="home-select-container">
-              <select
-                id="selecionarCorretor"
-                onChange={(event) => navigate(`/perfil/${event.target.value}`)}
-              >
-                <option value="">Selecione um Corretor</option>
-                {usersData.map(user => (
-                  <option key={user.email} value={user.email}>
-                    {user.profile.name}
-                  </option>
-                ))}
-              </select>
-            </div>
+            {user.role === 'adm' && (
+              <div className="home-select-container">
+                <select
+                  id="selecionarCorretor"
+                  onChange={(event) => navigate(`/perfil/${event.target.value}`)}
+                >
+                  <option value="">Selecione um Corretor</option>
+                  {usersData.map(user => (
+                    <option key={user.email} value={user.email}>
+                      {user.profile.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
           </div>
         </section>
       </main>

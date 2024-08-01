@@ -1,11 +1,12 @@
+// Home.jsx
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomeStyle.css';
-import usersData from '../Perfil/usersData'; // Ajuste o caminho conforme necessário
+import usersData from '../Perfil/usersData';
 
 const Home = () => {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem('loggedInUser')); // Obtém o usuário logado do localStorage
+  const user = JSON.parse(localStorage.getItem('loggedInUser'));
 
   const handleLogout = () => {
     localStorage.removeItem('loggedInUser');
@@ -19,11 +20,13 @@ const Home = () => {
         <div className="home-header-container">
           <nav>
             <ul>
-              <li>
-                <button className="home-button">
-                  <Link to={`/perfil/${user.email}`}>Perfil corretores</Link>
-                </button>
-              </li>
+              {user.role !== 'adm' && (
+                <li>
+                  <button className="home-button">
+                    <Link to={`/perfil/${user.email}`}>Perfil corretores</Link>
+                  </button>
+                </li>
+              )}
               <li>
                 <button className="home-button">
                   <Link to="/Unahome">Equipe Una</Link>

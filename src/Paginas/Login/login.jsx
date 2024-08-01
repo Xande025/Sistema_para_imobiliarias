@@ -1,3 +1,4 @@
+// Login.jsx
 import './loginStyle.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -8,15 +9,13 @@ function Login() {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-
-  //role: se for home vai pra centro vai pra home, se for una vai pra pagina do una
   const validUsers = [
-    { email: 'Duduenri', password: 'UPimoveis', role: 'home' },
-    { email: 'AlexandreR', password: 'UPimoveis', role: 'una'},
-    { email: 'MonicaG', password: 'vivamudanca', role: 'una' },
-    { email: 'GabrielH', password: 'vivamudanca', role: 'home' },
-    { email: 'LeonardoA', password: 'vivamudanca', role: 'una' },
-    { email: 'AlexC', password: 'vivamudanca', role: 'home' }, //Administrativo
+    { email: 'Duduenri', password: 'UPimoveis', role: 'adm' },
+    { email: 'AlexandreR', password: 'UPimoveis', role: 'adm'},
+    { email: 'MonicaG', password: 'vivamudanca', role: 'adm' },
+    { email: 'GabrielH', password: 'vivamudanca', role: 'adm' },
+    { email: 'LeonardoA', password: 'vivamudanca', role: 'adm' },
+    { email: 'AlexC', password: 'vivamudanca', role: 'home' }, 
     { email: 'CarolC', password: 'vivamudanca', role: 'home' },
     { email: 'ClaudioUP', password: 'vivamudanca', role: 'home' },
     { email: 'GabrielM', password: 'vivamudanca', role: 'home' },  
@@ -24,13 +23,13 @@ function Login() {
     { email: 'MarcioM', password: 'vivamudanca', role: 'home' },
     { email: 'NetoS', password: 'vivamudanca', role: 'home' },
     { email: 'RafaelA', password: 'vivamudanca', role: 'home' },
-    { email: 'TheodoroC', password: 'vivamudanca', role: 'home' }, //corretores Centro
+    { email: 'TheodoroC', password: 'vivamudanca', role: 'home' },
     { email: 'AnaBia', password: 'vivamudanca', role: 'una' },
     { email: 'DanmersomS', password: 'vivamudanca', role: 'una' },
     { email: 'JacquesD', password: 'vivamudanca', role: 'una' },
     { email: 'JordanaC', password: 'vivamudanca', role: 'una' },
     { email: 'RafaelP', password: 'vivamudanca', role: 'una' },
-    { email: 'RossanaP', password: 'vivamudanca', role: 'una' } // Corretores Una
+    { email: 'RossanaP', password: 'vivamudanca', role: 'una' } 
   ];
 
   const handleSubmit = (event) => {
@@ -41,11 +40,13 @@ function Login() {
     );
 
     if (user) {
-      localStorage.setItem('loggedInUser', JSON.stringify(user)); // Armazena o usuário logado
+      localStorage.setItem('loggedInUser', JSON.stringify(user));
       if (user.role === 'home') {
         navigate('/home');
       } else if (user.role === 'una') {
         navigate('/Unahome');
+      } else if (user.role === 'adm') {
+        navigate('/home'); // Ajuste conforme necessário para a página de admin
       }
     } else {
       setError('Login ou senha incorretos');

@@ -27,7 +27,7 @@ const Home = () => {
               {user.role !== 'adm' && (
                 <li>
                   <button className="home-button">
-                    <Link to={`/perfil/${user.email}`}>Perfil corretores</Link>
+                    <Link to={`/perfil/${user.email}`}>Perfil</Link>
                   </button>
                 </li>
               )}

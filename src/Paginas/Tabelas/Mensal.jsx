@@ -668,53 +668,53 @@ const Mensal = () => {
             <tbody>
               <tr className="table-row">
                 <td className="table-cell">Carol</td>
-                <td className="table-cellV">8</td>
-                <td className="table-cellV">7</td>
+                <td className="table-cellV">10</td>
+                <td className="table-cellV">9</td>
                 <td className="table-cellV table-cell-hide">1</td>
-                <td className="table-cellV">7</td>
-                <td className="table-cellV table-cell-hide">100%</td>
-                <td className="table-cellV table-cell-hide">140%</td>
-                <td className="table-cellV">120%</td>
+                <td className="table-cellV">17</td>
+                <td className="table-cellV table-cell-hide">125%</td>
+                <td className="table-cellV table-cell-hide">340%</td>
+                <td className="table-cellV">232.5%</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Claudio</td>
                 <td className="table-cellV">11</td>
                 <td className="table-cellV">6</td>
-                <td className="table-cellV table-cell-hide">2</td>
-                <td className="table-cellV">7</td>
+                <td className="table-cellV table-cell-hide">3</td>
+                <td className="table-cellV">8</td>
                 <td className="table-cellV table-cell-hide">137.5%</td>
-                <td className="table-cellV table-cell-hide">140%</td>
-                <td className="table-cellV">138.75%</td>
+                <td className="table-cellV table-cell-hide">160%</td>
+                <td className="table-cellV">148.75%</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Illie</td>
-                <td className="table-cell">4</td>
+                <td className="table-cellV">8</td>
                 <td className="table-cell">1</td>
-                <td className="table-cell table-cell-hide">0</td>
-                <td className="table-cell">0</td>
-                <td className="table-cell table-cell-hide">50%</td>
-                <td className="table-cell table-cell-hide">0%</td>
-                <td className="table-cell">25%</td>
+                <td className="table-cell table-cell-hide">1</td>
+                <td className="table-cell">2</td>
+                <td className="table-cellV table-cell-hide">100%</td>
+                <td className="table-cell table-cell-hide">40%</td>
+                <td className="table-cell">70%</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Marcio</td>
-                <td className="table-cellV">16</td>
-                <td className="table-cell">11</td>
-                <td className="table-cell table-cell-hide">14</td>
-                <td className="table-cell">4</td>
-                <td className="table-cellV table-cell-hide">200%</td>
-                <td className="table-cell table-cell-hide">80%</td>
-                <td className="table-cell">90%</td>
+                <td className="table-cellV">19</td>
+                <td className="table-cellV">13</td>
+                <td className="table-cellV table-cell-hide">14</td>
+                <td className="table-cellV">5</td>
+                <td className="table-cellV table-cell-hide">237.5%</td>
+                <td className="table-cellV table-cell-hide">100%</td>
+                <td className="table-cellV">168.75%</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Martini</td>
-                <td className="table-cellV">18</td>
-                <td className="table-cell">12</td>
+                <td className="table-cellV">22</td>
+                <td className="table-cell">4</td>
                 <td className="table-cell table-cell-hide">0</td>
-                <td className="table-cell">1</td>
-                <td className="table-cellV table-cell-hide">225%</td>
-                <td className="table-cell table-cell-hide">20%</td>
-                <td className="table-cell">60%</td>
+                <td className="table-cell">3</td>
+                <td className="table-cellV table-cell-hide">275%</td>
+                <td className="table-cell table-cell-hide">60%</td>
+                <td className="table-cell">80%</td>
               </tr>
               <tr className="table-row">
                 <td className="table-cell">Neto</td>
@@ -730,7 +730,7 @@ const Mensal = () => {
                 <td className="table-cell">Rafael</td>
                 <td className="table-cellV">13</td>
                 <td className="table-cell">5</td>
-                <td className="table-cell table-cell-hide">1</td>
+                <td className="table-cell table-cell-hide">2</td>
                 <td className="table-cell">2</td>
                 <td className="table-cellV table-cell-hide">162.5%</td>
                 <td className="table-cell table-cell-hide">40%</td>
@@ -748,13 +748,13 @@ const Mensal = () => {
               </tr>
               <tr className="table-row">
                 <td className="table-cellN">Total</td>
-                <td className="table-cellN">61</td>
-                <td className="table-cellN">45</td>
-                <td className="table-cellN table-cell-hide">1</td>
-                <td className="table-cellN">33</td>
-                <td className="table-cellN table-cell-hide">95.31%</td>
-                <td className="table-cellN table-cell-hide">82.5%</td>
-                <td className="table-cellN">90.48%</td>
+                <td className="table-cellN">98</td>
+                <td className="table-cellN">51</td>
+                <td className="table-cellN table-cell-hide">24</td>
+                <td className="table-cellN">46</td>
+                <td className="table-cellN table-cell-hide">153.12%</td>
+                <td className="table-cellN table-cell-hide">125%</td>
+                <td className="table-cellN">120.47%</td>
               </tr>
             </tbody>
           </table>

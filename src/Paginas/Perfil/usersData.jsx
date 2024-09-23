@@ -26,6 +26,32 @@ const usersData = [
     },
   },
   {
+    email: 'Duduenri',
+    password: 'vivamudanca',
+    role: 'home',
+    profile: {
+      name: 'Eduardo Enrique',
+      creci: '0000',
+      contato: '53991000000',
+      about: 'Nos últimos 6 meses, você tem uma média de 9,5 Ages e 5,8 Placas P. por mês.',
+      photo: '/fotosPerfis/Duduenri.jpg', // Caminho relativo à pasta pública
+      agenciamentos: {
+        janeiro: '/checksf.png',
+        fevereiro: '/checksf.png',
+        marco: '/checksf.png',
+        abril: '/checksf.png',
+        maio: '/xsf.png',
+        junho: '/checksf.png',
+        julho: '/checksf.png',
+        agosto: '/retsf.png',
+        setembro: '/retsf.png',
+        outubro: '/retsf.png',
+        novembro: '/retsf.png',
+        dezembro: '/retsf.png',
+      },
+    },
+  },
+  {
     email: 'ClaudioUP',
     password: 'vivamudanca',
     role: 'home',

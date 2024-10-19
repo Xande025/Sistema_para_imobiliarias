@@ -48,6 +48,11 @@ const Home = () => {
                 </button>
               </li>
               <li>
+                <button className="home-button">
+                <Link to="/Kanban">Gestão de Clientes</Link>
+                </button>
+              </li>
+              <li>
                 <button className="home-button" onClick={handlePapelariaClick}>
                   Papelaria
                 </button>

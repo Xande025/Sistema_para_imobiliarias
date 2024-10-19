@@ -19,3 +19,10 @@
     font-size: 2em; /* Aumenta o tamanho da fonte do nome */
     margin: 0; /* Remove margens padrão */
 }
+
+.kanban-header {
+    display: flex; /* Usar flexbox para layout */
+    justify-content: space-between; /* Espaçar itens para os extremos */
+    align-items: center; /* Alinhar verticalmente no centro */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+  }

@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className="kanban-header">
       <img 
-        src="public\fotosPerfis\Duduenri.jpg" // Ajuste o caminho da imagem
+        src="fotosPerfis\Duduenri.jpg" // Ajuste o caminho da imagem
         alt="Perfil" 
         className="profile-image" 
       />

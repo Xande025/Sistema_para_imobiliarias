@@ -12,6 +12,7 @@ const Formulario = (props) => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
+        // eslint-disable-next-line react/prop-types
         props.aoColaboradorCadastrado({
             nome,
             cargo,
@@ -53,6 +54,7 @@ const Formulario = (props) => {
                 <ListaSuspensa
                     obrigatorio={true}
                     label="Cargo" 
+                    // eslint-disable-next-line react/prop-types
                     itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}

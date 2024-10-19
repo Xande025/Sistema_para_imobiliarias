@@ -1,0 +1,21 @@
+/* Header.css */
+.kanban-header {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4; /* Cor de fundo do cabeçalho */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+}
+
+.profile-image {
+    width: 80px; /* Aumenta o tamanho da imagem do perfil */
+    height: 80px; /* Aumenta a altura da imagem do perfil */
+    border-radius: 50%; /* Para deixar a imagem redonda */
+    margin-right: 15px; /* Espaçamento entre a imagem e o nome */
+}
+
+.kanban-header h1 {
+    font-size: 2em; /* Aumenta o tamanho da fonte do nome */
+    margin: 0; /* Remove margens padrão */
+}

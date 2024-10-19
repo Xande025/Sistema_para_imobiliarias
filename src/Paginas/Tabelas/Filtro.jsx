@@ -1,6 +1,7 @@
 // Paginas/Tabelas/Filtro.jsx
 
-import React from 'react';
+// import React from 'react';
+import PropTypes from 'prop-types'; // Importando PropTypes
 
 const Filtro = ({ selectedMonth, setSelectedMonth }) => {
   const months = [
@@ -33,5 +34,11 @@ const Filtro = ({ selectedMonth, setSelectedMonth }) => {
     </div>
   );
 }
+
+// Definindo as propTypes para o componente
+Filtro.propTypes = {
+  selectedMonth: PropTypes.string.isRequired, // Validação para selectedMonth
+  setSelectedMonth: PropTypes.func.isRequired, // Validação para setSelectedMonth
+};
 
 export default Filtro;

@@ -2,7 +2,7 @@
   background-color: #f7fafc;
   font-family: sans-serif;
   margin: 20px auto; /* Centraliza o container horizontalmente */
-  max-width: 1200px; /* Define uma largura máxima para centralizar o conteúdo */
+  max-width: auto; /* Define uma largura máxima para centralizar o conteúdo */
   padding: 20px; /* Adiciona preenchimento ao redor do conteúdo */
   border-radius: 10px; /* Adiciona bordas arredondadas ao container */
 }
@@ -80,7 +80,9 @@
 }
 
 .logoM {
-  width: 80px; /* Mantém o tamanho do logo */
+  padding-left: 30px;
+  width: 280px;
+  margin: -50px;
 }
 
 .Bnt {

@@ -1,6 +1,7 @@
-// Paginas/Tabelas/Filtro2.jsx
+// Paginas/Tabelas/Filtro3.jsx
 
-import React from 'react';
+// import React from 'react';
+import PropTypes from 'prop-types'; // Importando PropTypes
 
 const Filtro3 = ({ selectedQuarter, setSelectedQuarter }) => {
   const quarters = [
@@ -10,7 +11,7 @@ const Filtro3 = ({ selectedQuarter, setSelectedQuarter }) => {
 
   return (
     <div className="filtro-trimestres">
-      <label htmlFor="selectQuarter">Selecione o trimestre:</label>
+      <label htmlFor="selectQuarter">Selecione o semestre:</label>
       <select
         id="selectQuarter"
         value={selectedQuarter}
@@ -23,5 +24,11 @@ const Filtro3 = ({ selectedQuarter, setSelectedQuarter }) => {
     </div>
   );
 }
+
+// Definindo as propTypes para o componente
+Filtro3.propTypes = {
+  selectedQuarter: PropTypes.string.isRequired, // Validação para selectedQuarter
+  setSelectedQuarter: PropTypes.func.isRequired, // Validação para setSelectedQuarter
+};
 
 export default Filtro3;

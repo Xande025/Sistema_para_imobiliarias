@@ -1,4 +1,3 @@
-// Login.jsx
 import './loginStyle.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -6,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false); // Novo estado para controle de exibição da senha
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -53,11 +53,15 @@ function Login() {
     }
   };
 
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="login-body">
       <div className="center-container">
         <section className="login">
-          <img src="/logo.png" alt="Logo" className="logoL" />
+          <img src="/novalogo.png" alt="Logo" className="logoL" />
           <h1>Faça seu Login</h1>
           {error && <p className="error-message">{error}</p>}
           <form onSubmit={handleSubmit}>
@@ -68,13 +72,22 @@ function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <input 
-              type="password" 
-              placeholder="Senha" 
-              className="input-field" 
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="password-container">
+              <input 
+                type={showPassword ? "text" : "password"}  // Alterna entre 'text' e 'password'
+                placeholder="Senha" 
+                className="input-field" 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button 
+                type="button" 
+                className="toggle-password" 
+                onClick={toggleShowPassword}
+              >
+                {showPassword ? '👁️' : '👁️'}  {/* Ícone para alternar a exibição */}
+              </button>
+            </div>
             <input type="submit" value="Entrar" className="submit-button" />
           </form>
         </section>

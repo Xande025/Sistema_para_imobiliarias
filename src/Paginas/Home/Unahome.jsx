@@ -1,5 +1,4 @@
 // Home.jsx
-import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomeStyle.css';
 import usersData from '../Perfil/usersData';
@@ -16,7 +15,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <header className="home-fixed-header">
-        <img src="/logo.png" alt="Logo" className="home-logo" />
+        <img src="/novalogo2.png" alt="Logo" className="home-logo" />
         <div className="home-header-container">
           <nav>
             <ul>

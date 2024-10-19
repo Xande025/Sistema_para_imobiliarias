@@ -1,4 +1,5 @@
 // Plantoes.jsx
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './Plantoes.css'; // Certifique-se de criar este arquivo para estilos personalizados
 

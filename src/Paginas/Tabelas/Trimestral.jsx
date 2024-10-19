@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Trimestral.css';
@@ -9,7 +10,7 @@ const Trimestral = () => {
   return (
     <div className="containerr">
       <header className="fixed-headerr">
-        <img src="/logo.png" alt="Logo" className="logo" />
+        <img src="/novalogo2.png" alt="Logo" className="logo" />
         <h1 className="tituloM">Planilha Trimestral</h1>
         <div className="header">
           <button className='Bnt'>

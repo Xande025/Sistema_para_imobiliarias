@@ -9,6 +9,8 @@ import Trimestral from './Paginas/Tabelas/Trimestral';
 import Semestral from './Paginas/Tabelas/Semestral';
 import Unahome from './Paginas/Home/Unahome';
 import Plantoes from './Paginas/Plantao/Plantoes';
+import Kanban from './Paginas/KanBan/kanban'; // Ajuste o caminho conforme a estrutura do seu projeto
+
 
 
 function App() {
@@ -24,11 +26,11 @@ function App() {
         <Route path="/agenciamento" element={<Agenciamento />} />
         <Route path="/trimestral" element={<Trimestral />} />
         <Route path="/semestral" element={<Semestral />} />
-        <Route path="/" element={<Navigate to="/login" />} /> {/* Redireciona para login */}
         <Route path="/plantoes" element={<Plantoes />} />
+        <Route path="/kanban" element={<Kanban />} /> {/* Nova rota para o Kanban */}
+        <Route path="/" element={<Navigate to="/login" />} /> {/* Redireciona para login */}
       </Routes>
     </Router>
   );
 }
-
 export default App;

@@ -30,8 +30,11 @@
 }
 
 .logo {
-  width: 120px;
+  padding-left: 30px;
+  width: 280px;
+  margin: -50px;
 }
+
 
 .Bnt {
   padding: 10px 20px;

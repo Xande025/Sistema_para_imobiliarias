@@ -1,6 +1,7 @@
 // Paginas/Tabelas/Filtro2.jsx
 
-import React from 'react';
+// import React from 'react';
+import PropTypes from 'prop-types'; // Importando PropTypes
 
 const Filtro2 = ({ selectedQuarter, setSelectedQuarter }) => {
   const quarters = [
@@ -25,5 +26,11 @@ const Filtro2 = ({ selectedQuarter, setSelectedQuarter }) => {
     </div>
   );
 }
+
+// Definindo as propTypes para o componente
+Filtro2.propTypes = {
+  selectedQuarter: PropTypes.string.isRequired, // Validação para selectedQuarter
+  setSelectedQuarter: PropTypes.func.isRequired, // Validação para setSelectedQuarter
+};
 
 export default Filtro2;

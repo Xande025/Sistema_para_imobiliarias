@@ -1,5 +1,6 @@
 import './Colaborador.css';
 
+// eslint-disable-next-line react/prop-types
 const Colaborador = ({ nome, imagem, cargo, corDeFundo }) => {
     return (<div className='colaborador'>
         <div className='cabecalho' style={{ backgroundColor: corDeFundo}}>

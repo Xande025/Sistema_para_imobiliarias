@@ -31,8 +31,9 @@ body {
 }
 
 .home-logo {
-  margin-left: 20px;
-  width: 100px;
+  padding-left: 30px;
+  width: 280px;
+  margin: -50px;
 }
 
 nav ul {
